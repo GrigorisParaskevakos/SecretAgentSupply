@@ -3,10 +3,7 @@
 html {
     font-size: 18px;
     background-color: white;
-}
-
-body {
-    font-family: Helvetica;
+    font-family: Helvetica
 }
 
 h1,
@@ -79,6 +76,11 @@ nav ul {
     padding: 0.75em 0;
 }
 
+.mobile-nav {
+    /*when not below 1024px then do*/
+    display: none;
+}
+
 
 /* product grid */
 
@@ -136,4 +138,123 @@ footer {
     color: white;
     padding: 5em 0;
     margin-top: 4em;
+}
+
+
+/*************** 
+****************
+*@media queries*
+****************
+****************/
+
+
+/*tablet design <= 1024px*/
+
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+/*navigation*/
+
+@media only screen and (max-width: 1024px) {
+    nav ul {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/* product grid */
+
+@media only screen and (max-width: 1024px) {
+    .product {
+        width: 47%;
+    }
+    .products .glasses {
+        display: none;
+    }
+}
+
+
+/* mobile design <= 470px*/
+
+@media only screen and (max-width: 470px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+/*main banner*/
+
+@media only screen and (max-width: 470px) {
+    .main-banner {
+        height: 15em;
+    }
+    .headline {
+        width: 100%;
+        padding: 1em 2em;
+        top: 10em;
+    }
+    .headline h4 {
+        font-size: 0.77em;
+    }
+    .headline h1 {
+        font-size: 1em;
+    }
+}
+
+
+/*navigation*/
+
+@media only screen and (max-width: 470px) {
+    nav ul {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/* product grid */
+
+@media only screen and (max-width: 470px) {
+    .product {
+        width: 47%;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .products,
+    .info-box {
+        flex-wrap: wrap;
+    }
+    .product {
+        width: 90%;
+        margin: auto;
+    }
+    .product.watch {
+        display: none;
+    }
+    .info {
+        width: 90%;
+        margin: 0.5em auto;
+    }
+}
+
+
+/* footer */
+
+@media only screen and (max-width: 470px) {
+    footer {
+        text-align: center;
+    }
 }
