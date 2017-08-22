@@ -8,3 +8,132 @@ html {
 body {
     font-family: Helvetica;
 }
+
+h1,
+h4 {
+    font-weight: bold;
+}
+
+.grid-box {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+/* the logo */
+
+.logo {
+    background-color: black;
+    color: white;
+}
+
+.logo .grid-box {
+    display: flex;
+    align-items: center;
+    padding: 12px 0 12px 0.5em;
+}
+
+.logo img {
+    height: 1.5em;
+    padding-right: 15px;
+}
+
+
+/* main banner */
+
+.main-banner {
+    background: url(../images/moto.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 25em;
+}
+
+.headline {
+    background-color: black;
+    color: white;
+    width: 20em;
+    padding: 2em 3em;
+    position: relative;
+    top: 9em;
+}
+
+.headline h1 {
+    font-size: 2em;
+    line-height: 1.2em;
+    margin: 0.25em 0;
+}
+
+
+/*  navigation */
+
+nav {
+    background-color: firebrick;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75em 0;
+}
+
+
+/* product grid */
+
+.products,
+.info-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0 0 0;
+}
+
+.product {
+    width: 30%;
+}
+
+.product-img {
+    border: 4px solid black;
+    padding: 2em 0;
+    height: 9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img img {
+    max-width: 8em;
+}
+
+.product-info {
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+}
+
+
+/* location & hours */
+
+.info {
+    width: 35%;
+}
+
+.info .title {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 1em 2em;
+}
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5em 0;
+    margin-top: 4em;
+}
